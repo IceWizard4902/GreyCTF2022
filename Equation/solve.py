@@ -3,7 +3,7 @@ from Crypto.Util.number import bytes_to_long
 FLAG = b'grey{!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}'
 
 n = len(FLAG)
-
+print(n)
 m1 = bytes_to_long(FLAG[:n//2])
 m2 = bytes_to_long(FLAG[n//2:])
 
@@ -28,7 +28,7 @@ def verify_flag(flag):
             count_b += 1
         else:
             break 
-    return count_b, count_a
+    return count_a, count_b
 
 def solve_flag(flag, index, record):
     if index == n - 1:
