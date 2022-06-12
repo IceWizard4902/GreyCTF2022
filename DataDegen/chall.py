@@ -23,7 +23,7 @@ for _ in range(800):
     mean = means[r.randint(0, len(means)-1)]
     points.append(sample(mean, std_dev))
 
-with open("data1.txt", "w") as f:
+with open("data.txt", "w") as f:
     inter = list(map(str,interval))
     ps = list(map(str, points))
 
