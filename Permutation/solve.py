@@ -48,6 +48,10 @@ def comparePerm(temp):
             return False 
     return True
 
+# Chain is the "repeating sequence" used in the writeup
+# but it's too long so I initially use "chain"
+# Helper function to determine the chain length
+# Chain ends when it encounters its first element
 def makeChain():
     chain = [[] for i in range(len(g.internal))]
     for i in range(len(g.internal)):
@@ -62,20 +66,32 @@ def makeChain():
     return chain 
 
 chain = makeChain()
+
+# Factors is the chain (repeating sequence) length here
+# We find all the length in every index of the arrays in
+# the cycle
 factors = [i for i in range(len(g.internal))]
 for i in range(len(g.internal)):
     factors[i] = len(chain[i])
 
+# We retrieve the unique factors to use for the CRT
 unique_factors = list(set(factors))
-factor_position = []
 
+# This is to retrieve back the first occurance
+# of the given chain length in the array.
+# This serves to find the position of the element
+# in its chain
+factor_position = []
 for factor in unique_factors:
     factor_position.append(factors.index(factor))
 
+# Find position in the chain, which is also the
+# remainder of b dividing the chain length
 remainder = []
 for position in factor_position:
     remainder.append(chain[position].index(B.internal[position]))
 
+# Applying Chinese Remainder Theorem using Sage
 b = CRT(remainder, unique_factors) + 1
 S = A ** b
 key = str(S)
