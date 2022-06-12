@@ -1,5 +1,5 @@
 # Misc - Calculator
->Author: Wong Chee Hong
+> Author: Wong Chee Hong
 
 Calculator is a pretty straight-forward challenge. Upon entering the challenge, we are greeted with the following:
 
