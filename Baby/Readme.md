@@ -10,7 +10,7 @@ r * p - s * q = a
 <=> (r - s) * p - s * b = a
 <=> (r - s) * p = s * b + a
 ```
-Hence, `s * b + a` is divisible to `r - s`. This is a linear congruence problem and the algorithm for solving this can be found on Stackoverflow. The snippet that I used is in the commented out code. The value of `b` underneath is the value calculated from the function. `b` has a restriction to be 1024 bits so we can use the particular solution, as any of the other solutions in the general solution set is `4096` bits long.
+Hence, `s * b + a` is divisible to `r - s`. Finding `b` is a linear congruence problem and the algorithm for solving this can be found on Stackoverflow. The snippet that I used is in the commented out code. The value of `b` underneath is the value calculated from the function. `b` has a restriction to be 1024 bits so we can use the particular solution, as any of the other solutions in the general solution set is `4096` bits long.
 
 Having the value of `b`, we can retrieve the value of `p` by doing simple division. `divmod` is used here since it can handle division with big integers. `q` is derived from `q = p + b`. From `p` and `q`, we can figure out the inverse of e, `d`, and use this to retrieve the flag.
 
