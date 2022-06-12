@@ -18,7 +18,6 @@ class NeuralNetwork(torch.nn.Module):
     x = self.layer1(x)
     x = self.step_activation(x)
     x = self.layer2(x)
-    print(x)
     x = self.step_activation(x)
     return int(x)
 
