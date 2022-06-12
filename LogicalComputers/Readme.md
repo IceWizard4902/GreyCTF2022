@@ -1,4 +1,5 @@
 # Logical Computers
+> Author: Nguyen Quang Vinh
 
 `Aliencaocao` from Hwa Chong has an awesome, and in my opinion, more "intended" solution. You can check out his writeup at this [link](https://github.com/aliencaocao/GreyCTF-2022/tree/master/Logical%20Computers). My solution does not really involve the Math like his, but it is based on an intuition that I have doing a bit of work in AI/ML in general.
 

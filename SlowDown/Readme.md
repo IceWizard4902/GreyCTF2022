@@ -1,4 +1,5 @@
 # SlowDown
+> Author: Nguyen Quang Vinh
 
 To retrieve the flag, one has to do operations that combined, takes longer than 5 seconds for the program to execute. 
 

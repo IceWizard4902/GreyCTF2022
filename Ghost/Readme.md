@@ -1,4 +1,5 @@
 # Ghost
+> Author: Nguyen Quang Vinh
 
 This is quite a tricky challenge, as I thought initially this challenge is about finding out what's the encoding scheme behind all the messages. Using [dcode](https://www.dcode.fr/cipher-identifier), we can easily identify the encoding used in the visible text. However the messages' content are mostly gibberish and do not contain any clues to the actual flag.
 

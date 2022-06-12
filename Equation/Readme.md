@@ -1,4 +1,5 @@
 # Equation
+> Author: Nguyen Quang Vinh
 
 The task in here is straightforward, solve the two equations to get the value of `m1` and `m2`. There is straightforward and nicer solution (kudos to `Connor579` on the GreyCTF Discord) in the `nicer_solve.sage` file. Unfortunately, I did not know how to use Sage properly, as I do not find good answers from Google answering my queries about "solving the system of polynomials using Sagemath", so I try to come up with a different solution to this. Solution to `Equations-2` can be found in jontay999 writeup at this [link](https://github.com/jontay999/CTF-writeups/blob/master/GreyCTF%202022/Crypto/equation2.md) or in the `nicer_solve2.sage` (kudos to `joseph` on the GreyCTF Discord).
 

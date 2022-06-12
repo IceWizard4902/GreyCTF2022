@@ -1,4 +1,5 @@
 # Permutation
+> Author: Nguyen Quang Vinh
 
 We are provided with three files, `main.py`, `out.txt` and `perm.py`. `out.txt` is the result of running `main.py`, `perm.py` is used as the permutation library used for this challenge.
 

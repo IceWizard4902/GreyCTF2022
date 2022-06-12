@@ -1,4 +1,5 @@
 # Baby
+> Author: Nguyen Quang Vinh
 
 The message is encrypted using the textbook RSA algorithm, and to decrypt the message we need to retrieve the values of the two primes `p` and `q`.
 

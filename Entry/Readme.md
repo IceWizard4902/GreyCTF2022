@@ -1,4 +1,5 @@
 # Entry
+> Author: Nguyen Quang Vinh
 
 The message is encrypted by `xor` the original message with the secret key. But the implementation leaks information as it `xor` 4 bytes at a time. 
 
