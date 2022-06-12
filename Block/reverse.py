@@ -28,11 +28,6 @@ test = list(range(1, 17))
 
 mat = [[test[i * 4 + j] for j in range(4)] for i in range(4)]
 
-def xor(block):
-    for i in range(4):
-        for j in range(4):
-            block[i][j] ^= block[(i + 2) % 4][(j + 1) % 4]
-
 def reverse_xor(block):
     order = [2, 3, 0, 1]
     for i in order:
