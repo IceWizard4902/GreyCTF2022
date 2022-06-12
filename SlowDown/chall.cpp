@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-#define LIMIT 3
+#define LIMIT 25000
 
 string flag = "<REDACTED>";
 
